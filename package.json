@@ -11,6 +11,7 @@
 	},
 	"author": "",
 	"license": "ISC",
+	"homepage": "https://github.com/BishoSBA/portfolio/dist/",
 	"devDependencies": {
 		"css-loader": "^6.7.1",
 		"sass": "^1.54.0",
