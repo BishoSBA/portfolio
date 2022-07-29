@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap");
+
+$backgroundPrimaryColor: #1d1d1d;
+$backgroundSecondaryColor: white;
+$primaryColor: #da3e52;
+$secondaryColor: white;
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+	border: none;
+}
+
+/* Standard */
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: $backgroundPrimaryColor;
+	color: $primaryColor;
+}
+::-webkit-scrollbar-thumb {
+	background: $primaryColor;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+	font-size: 62.5%;
+	color: yellow;
+	text-align: center;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+a:active,
+a:link,
+a:visited {
+	color: $primaryColor;
+	text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+	background-color: $backgroundPrimaryColor;
+	padding: 20px 25px;
+
+	& nav {
+		display: flex;
+		font-size: 2.2rem;
+		justify-content: space-between;
+
+		& ul {
+			display: flex;
+			gap: 10%;
+		}
+	}
+}
+
+main {
+	background-color: $backgroundPrimaryColor;
+	font-size: 2.5rem;
+	& h1 {
+		padding: 50px 0px 0px;
+		color: $secondaryColor;
+		& span {
+			color: $primaryColor;
+		}
+	}
+	& p {
+		padding: 20px 15%;
+	}
+
+	& ul {
+		display: flex;
+		justify-content: space-evenly;
+		font-size: 4rem;
+	}
+}
+
+.background {
+	height: 400px;
+	background-image: url("https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
