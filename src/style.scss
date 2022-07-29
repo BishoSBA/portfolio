@@ -25,6 +25,30 @@ html {
 	background: $primaryColor;
 }
 
+@keyframes hero {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes waving {
+	0% {
+		transform: rotate(0);
+	}
+
+	50% {
+		transform: rotate(30deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -76,7 +100,7 @@ header {
 	& nav {
 		display: flex;
 		display: 100%;
-		font-size: 2.2rem;
+		font-size: 2rem;
 		justify-content: space-between;
 
 		& ul {
@@ -94,39 +118,59 @@ header {
 			&:visited {
 				color: $secondaryColor;
 			}
+			&:hover {
+			}
 		}
 	}
 }
 
 main {
 	background-color: $backgroundPrimaryColor;
-	font-size: 2.4rem;
+	font-size: 2.2rem;
 	position: relative;
-	box-shadow: 0px 20px 20px -20px black;
-	padding: 50px 0px;
+	box-shadow: 0px 30px 30px -30px black;
+	padding: 30px 0px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
 
 	& h1 {
 		color: $secondaryColor;
+		animation: hero 800ms ease-out 300ms backwards;
 		& span {
 			color: $primaryColor;
 		}
 	}
 	& p {
 		margin: auto;
-		padding: 20px 0;
-		max-width: min(95%, 800px);
+		max-width: min(95%, 700px);
 		text-align: center;
+		animation: hero 800ms ease-out 300ms backwards;
 	}
 
 	& ul {
 		display: flex;
+		flex-direction: row;
+		padding: 20px 0px;
 		justify-content: space-evenly;
-		font-size: 4rem;
+		width: min(95%, 800px);
+		font-size: 5rem;
+		animation: hero 800ms ease-out 300ms backwards;
+	}
+
+	& > span {
+		font-size: 1.6em;
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 
 .background {
-	height: 400px;
+	height: 600px;
 	background-image: url("https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
 	background-size: cover;
 }
@@ -136,8 +180,7 @@ main {
 	font-size: 2.5rem;
 	position: relative;
 	padding: 30px 0px;
-	box-shadow: 0px -20px 20px -20px black;
-
+	box-shadow: 0px -30px 30px -30px black;
 	& h2 {
 		padding: 20px 0px;
 	}
@@ -147,6 +190,13 @@ main {
 		justify-content: space-evenly;
 		font-size: 7rem;
 		padding: 20px 0px;
+
+		& li {
+			width: min(100px, 20%);
+			text-align: center;
+			font-size: 100%;
+			animation: hero 800ms ease-out 300ms backwards;
+		}
 	}
 }
 
@@ -158,6 +208,7 @@ main {
 	display: flex;
 	width: 100%;
 	flex-direction: column;
+	animation: hero 800ms ease-out 300ms backwards;
 
 	& h2,
 	& h3 {
@@ -212,4 +263,8 @@ main {
 
 span {
 	color: $primaryColor;
+}
+
+i {
+	color: $secondaryColor;
 }
