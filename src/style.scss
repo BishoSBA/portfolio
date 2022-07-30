@@ -157,6 +157,11 @@ main {
 		width: min(95%, 800px);
 		font-size: 5rem;
 		animation: hero 800ms ease-out 300ms backwards;
+
+		& li {
+			width: min(80px, 15%);
+			text-align: center;
+		}
 	}
 
 	& > span {
@@ -188,11 +193,16 @@ main {
 	& ul {
 		display: flex;
 		justify-content: space-evenly;
-		font-size: 7rem;
+		font-size: 5rem;
 		padding: 20px 0px;
+		color: $secondaryColor;
+		& img {
+			width: 100px;
+			background-color: $secondaryColor;
+		}
 
 		& li {
-			width: min(100px, 20%);
+			width: min(80px, 15%);
 			text-align: center;
 			font-size: 100%;
 			animation: hero 800ms ease-out 300ms backwards;
@@ -267,4 +277,9 @@ span {
 
 i {
 	color: $secondaryColor;
+}
+
+svg path,
+svg circle {
+	fill: $secondaryColor;
 }
