@@ -203,6 +203,15 @@
         </section>
     </section>
     <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <label>Your Name: <input type="text" name="name" /></label>
+            <label>Your Email: <input type="email" name="email" /></label>
+            <label>Message: <textarea name="message"></textarea></label>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit">Send</button>
+
+        </form>
 
         <footer class="copyright">Built by <a href="https://github.com/BishoSBA" target="_blank">BishoSBA</a> | <a
                 href="https://github.com/BishoSBA/portfolio" target="_blank">Source code</a></footer>
