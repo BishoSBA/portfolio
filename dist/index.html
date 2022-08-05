@@ -203,9 +203,18 @@
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
         <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <div><label>Your Name: <input type="text" name="name" /></label></div>
-            <div><label>Your Email: <input type="email" name="email" /></label></div>
-            <div><label>Message: <textarea name="message"></textarea></label></div>
+            <div>
+                <label for="name">Your Name: </label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div>
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div>
+                <label for="message">Message: </label>
+                <textarea name="message" id="message"></textarea>
+            </div>
             <section>
                 <div data-netlify-recaptcha="true"></div>
             </section>
