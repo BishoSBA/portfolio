@@ -60,6 +60,7 @@ html {
 }
 
 body {
+	display: block !important;
 	font-family: "Roboto", sans-serif;
 	margin: 0;
 	padding: 0;
@@ -200,7 +201,7 @@ main {
 
 .background {
 	height: 600px;
-	background-image: url("https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+	background-image: url("../assets/main-background.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -237,13 +238,15 @@ main {
 }
 
 #projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	position: relative;
 	background-color: $backgroundSecondaryColor;
-	color: #1d1d1d;
+	color: $backgroundPrimaryColor;
 	font-size: 2.5rem;
 	padding: 30px;
-	display: flex;
 	width: 100%;
-	flex-direction: column;
 	animation: hero 800ms ease-out 300ms backwards;
 
 	& h2,
@@ -254,7 +257,9 @@ main {
 	& > section {
 		display: grid;
 		justify-content: center;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-auto-rows: minmax(min-content, max-content);
+		position: relative;
 		gap: 2%;
 		padding: 20px 0px;
 
@@ -268,7 +273,7 @@ main {
 			& > section:first-child {
 				background-image: url(http://placekitten.com/g/400/400);
 				background-size: cover;
-				height: 400px;
+				height: 200px;
 			}
 
 			& h3 {
@@ -335,6 +340,10 @@ main {
 				width: 100%;
 				height: 25px;
 				border-radius: 5px;
+
+				&:focus-visible {
+					outline: $primaryColor 3px solid;
+				}
 			}
 
 			& textarea {
@@ -342,6 +351,10 @@ main {
 				height: 100px;
 				border-radius: 5px;
 				margin: 5px 0px;
+
+				&:focus-visible {
+					outline: $primaryColor 3px solid;
+				}
 			}
 		}
 		& button {
@@ -378,4 +391,19 @@ i {
 svg path,
 svg circle {
 	fill: $secondaryColor;
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+@media screen and (max-width: 785px) {
+	nav > ul + a {
+		font-size: 0.9em;
+		padding: 5px 10px;
+	}
+
+	#projects > section {
+		padding: 20px 0px 100px;
+	}
 }
