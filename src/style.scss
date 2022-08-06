@@ -363,14 +363,26 @@ main {
 				}
 			}
 		}
+
+		& section > div {
+			align-self: center;
+		}
+
 		& button {
 			background-color: $primaryColor;
 			color: $secondaryColor;
 			padding: 10px 30px;
 			width: fit-content;
+			border: $primaryColor 3px solid;
 			border-radius: 40px;
 			font-size: 2rem;
 			align-self: center;
+
+			&:hover {
+				color: $primaryColor;
+				background-color: $backgroundPrimaryColor;
+				transition: 0.2s;
+			}
 		}
 	}
 }
@@ -409,8 +421,4 @@ svg circle {
 		font-size: 0.9em;
 		padding: 5px 10px;
 	}
-
-	// #projects > section {
-	// 	padding: 20px 0px 200px;
-	// }
 }
