@@ -1,4 +1,7 @@
 import "./style.scss";
+import portfolio from "../assets/portfolio-thumbnail.png";
+import sillySketch from "../assets/silly-sketch-thumbnail.png";
+import ticTacToe from "../assets/tic-tac-toe-thumbnail.png";
 
 // Languages
 
