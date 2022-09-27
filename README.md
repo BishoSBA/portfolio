@@ -3,7 +3,7 @@ A portfolio showcasing some of my skills and previous projects with my contact i
 
 **Link to project:** https://www.beshir.tech/
 
-<img src="https://github.com/BishoSBA/portfolio/blob/main/assets/portfolio-gif.gif" width="auto">
+<!--- <img src="https://github.com/BishoSBA/portfolio/blob/main/assets/portfolio-gif.gif" width="auto"> -->
 
 ## How It's Made:
 
