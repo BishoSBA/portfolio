@@ -30,7 +30,7 @@ A portfolio showcasing some of my skills and previous projects with my contact i
 
 ## Optimizations
 
-* Add complete information on my projects
+* Add gifs to display projects
 * Add unique animations on the section links such as projects and contact sections
 
 ## Lessons Learned:
