@@ -7,13 +7,13 @@ new TypeIt("#title", {
 	loop: true,
 	speed: 110,
 })
-	.pause(1000)
+	.pause(2000)
 	.delete()
 	.type("Web Developer")
-	.pause(1000)
+	.pause(2000)
 	.delete()
 	.type("Software Developer")
-	.pause(1000)
+	.pause(2000)
 	.go();
 
 // Languages
