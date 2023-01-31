@@ -3,8 +3,20 @@ import portfolio from "../assets/portfolio-thumbnail.png";
 import sillySketch from "../assets/silly-sketch-thumbnail.png";
 import ticTacToe from "../assets/tic-tac-toe-thumbnail.png";
 
-// Languages
+new TypeIt("#title", {
+	loop: true,
+	speed: 110,
+})
+	.pause(1000)
+	.delete()
+	.type("Web Developer")
+	.pause(1000)
+	.delete()
+	.type("Software Developer")
+	.pause(1000)
+	.go();
 
+// Languages
 const stack1 = document.getElementById("stack1");
 const stack2 = document.getElementById("stack2");
 const stack3 = document.getElementById("stack3");
