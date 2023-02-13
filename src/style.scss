@@ -2,8 +2,14 @@
 
 $backgroundPrimaryColor: #1d1d1d;
 $backgroundSecondaryColor: white;
-$primaryColor: #d10000;
+$primaryColor: rgba(54, 211, 238, 1);
 $secondaryColor: white;
+#title {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(100deg, rgba(39, 39, 121, 1) 50%, rgba(34, 211, 238, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 /* Box Model */
 * {

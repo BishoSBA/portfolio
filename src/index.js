@@ -12,7 +12,7 @@ new TypeIt("#title", {
 	.type("Web Developer")
 	.pause(2000)
 	.delete()
-	.type("Software Developer")
+	.type("Software Engineer")
 	.pause(2000)
 	.go();
 
