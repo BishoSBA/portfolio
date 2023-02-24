@@ -26,7 +26,7 @@ A portfolio showcasing some of my skills and previous projects with my contact i
 ## Examples:
 
 * Used SASS, a CSS pre-compiler to utilize better nesting for css properties and ease in usage of variables which allows ease in changing the color/theme of the website in the future
-* Used JaveScript to listen to when the elements are on screen to toggle their CSS animations
+* Used JavaScript to listen to when the elements are on screen to toggle their CSS animations
 
 ## Optimizations
 
